@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65145C9E227DAED9002FA9BB /* DealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65145C9D227DAED9002FA9BB /* DealTableViewCell.swift */; };
+		65145CA1227E7AED002FA9BB /* DealPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65145CA0227E7AED002FA9BB /* DealPresenterTests.swift */; };
+		653317362276E84C00CE7498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653317352276E84C00CE7498 /* AppDelegate.swift */; };
+		653317382276E84C00CE7498 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653317372276E84C00CE7498 /* LoginViewController.swift */; };
+		6533173B2276E84C00CE7498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653317392276E84C00CE7498 /* Main.storyboard */; };
+		6533173D2276E84E00CE7498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6533173C2276E84E00CE7498 /* Assets.xcassets */; };
+		653317402276E84E00CE7498 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6533173E2276E84E00CE7498 /* LaunchScreen.storyboard */; };
+		6533176D2277007B00CE7498 /* DealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533176C2277007B00CE7498 /* DealsViewController.swift */; };
+		6533176F2277008B00CE7498 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533176E2277008B00CE7498 /* CityViewController.swift */; };
+		65331771227700B600CE7498 /* DealsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65331770227700B600CE7498 /* DealsProtocol.swift */; };
+		65331773227700D300CE7498 /* CityProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65331772227700D300CE7498 /* CityProtocols.swift */; };
+		65331775227700F100CE7498 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65331774227700F100CE7498 /* LoginProtocol.swift */; };
+		653317772277017B00CE7498 /* DealInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653317762277017B00CE7498 /* DealInteractor.swift */; };
+		653317792277018C00CE7498 /* CityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653317782277018C00CE7498 /* CityInteractor.swift */; };
+		6533177B2277019C00CE7498 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533177A2277019C00CE7498 /* LoginInteractor.swift */; };
+		6533177D227701B300CE7498 /* DealPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533177C227701B300CE7498 /* DealPresenter.swift */; };
+		6533177F227701BE00CE7498 /* CityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533177E227701BE00CE7498 /* CityPresenter.swift */; };
+		65331781227701D900CE7498 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65331780227701D900CE7498 /* LoginPresenter.swift */; };
+		65331783227701FE00CE7498 /* DealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65331782227701FE00CE7498 /* DealModel.swift */; };
+		653317852277020800CE7498 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653317842277020800CE7498 /* CityModel.swift */; };
+		653317872277021400CE7498 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653317862277021400CE7498 /* LoginModel.swift */; };
+		653317892277023000CE7498 /* DealRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653317882277023000CE7498 /* DealRouter.swift */; };
+		6533178B2277023D00CE7498 /* CityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533178A2277023D00CE7498 /* CityRouter.swift */; };
+		6533178D2277024A00CE7498 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533178C2277024A00CE7498 /* LoginRouter.swift */; };
+		6533178F2279AB9100CE7498 /* Deallist.json in Resources */ = {isa = PBXBuildFile; fileRef = 6533178E2279AB9100CE7498 /* Deallist.json */; };
+		653317932279ACA100CE7498 /* Citylist.json in Resources */ = {isa = PBXBuildFile; fileRef = 653317922279ACA100CE7498 /* Citylist.json */; };
+		653317DA2279BD3400CE7498 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 653317962279BD3400CE7498 /* CHANGELOG.md */; };
+		653317DB2279BD3400CE7498 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 653317972279BD3400CE7498 /* GoogleSignIn.bundle */; };
+		653317DC2279BD3400CE7498 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 653317982279BD3400CE7498 /* README.md */; };
+		653317DD2279BD3400CE7498 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653317992279BD3400CE7498 /* GoogleSignInDependencies.framework */; };
+		653317EC2279BD3400CE7498 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653317D62279BD3400CE7498 /* GoogleSignIn.framework */; };
+		653317EF2279BDDE00CE7498 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653317EE2279BDDE00CE7498 /* SafariServices.framework */; };
+		653317F12279BDE600CE7498 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653317F02279BDE600CE7498 /* SystemConfiguration.framework */; };
+		653317F52279BF7C00CE7498 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 653317F42279BF7C00CE7498 /* GoogleService-Info.plist */; };
+		653317F82279C1AA00CE7498 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653317F72279C1AA00CE7498 /* Constant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		653317472276E84F00CE7498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6533172A2276E84C00CE7498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 653317312276E84C00CE7498;
+			remoteInfo = DealApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65145C9D227DAED9002FA9BB /* DealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealTableViewCell.swift; sourceTree = "<group>"; };
+		65145CA0227E7AED002FA9BB /* DealPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealPresenterTests.swift; sourceTree = "<group>"; };
+		653317322276E84C00CE7498 /* DealApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DealApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		653317352276E84C00CE7498 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		653317372276E84C00CE7498 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6533173A2276E84C00CE7498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6533173C2276E84E00CE7498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6533173F2276E84E00CE7498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		653317412276E84E00CE7498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		653317462276E84F00CE7498 /* DealAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6533174C2276E84F00CE7498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6533176C2277007B00CE7498 /* DealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsViewController.swift; sourceTree = "<group>"; };
+		6533176E2277008B00CE7498 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		65331770227700B600CE7498 /* DealsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsProtocol.swift; sourceTree = "<group>"; };
+		65331772227700D300CE7498 /* CityProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityProtocols.swift; sourceTree = "<group>"; };
+		65331774227700F100CE7498 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		653317762277017B00CE7498 /* DealInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealInteractor.swift; sourceTree = "<group>"; };
+		653317782277018C00CE7498 /* CityInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInteractor.swift; sourceTree = "<group>"; };
+		6533177A2277019C00CE7498 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		6533177C227701B300CE7498 /* DealPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealPresenter.swift; sourceTree = "<group>"; };
+		6533177E227701BE00CE7498 /* CityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPresenter.swift; sourceTree = "<group>"; };
+		65331780227701D900CE7498 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		65331782227701FE00CE7498 /* DealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealModel.swift; sourceTree = "<group>"; };
+		653317842277020800CE7498 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		653317862277021400CE7498 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		653317882277023000CE7498 /* DealRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealRouter.swift; sourceTree = "<group>"; };
+		6533178A2277023D00CE7498 /* CityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRouter.swift; sourceTree = "<group>"; };
+		6533178C2277024A00CE7498 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		6533178E2279AB9100CE7498 /* Deallist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Deallist.json; sourceTree = "<group>"; };
+		653317922279ACA100CE7498 /* Citylist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Citylist.json; sourceTree = "<group>"; };
+		653317962279BD3400CE7498 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		653317972279BD3400CE7498 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		653317982279BD3400CE7498 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		653317992279BD3400CE7498 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		653317D62279BD3400CE7498 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		653317EE2279BDDE00CE7498 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		653317F02279BDE600CE7498 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		653317F42279BF7C00CE7498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		653317F72279C1AA00CE7498 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6533172F2276E84C00CE7498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653317F12279BDE600CE7498 /* SystemConfiguration.framework in Frameworks */,
+				653317EF2279BDDE00CE7498 /* SafariServices.framework in Frameworks */,
+				653317DD2279BD3400CE7498 /* GoogleSignInDependencies.framework in Frameworks */,
+				653317EC2279BD3400CE7498 /* GoogleSignIn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653317432276E84F00CE7498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		653317292276E84C00CE7498 = {
+			isa = PBXGroup;
+			children = (
+				653317342276E84C00CE7498 /* DealApp */,
+				653317492276E84F00CE7498 /* DealAppTests */,
+				653317332276E84C00CE7498 /* Products */,
+				653317ED2279BDDE00CE7498 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		653317332276E84C00CE7498 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				653317322276E84C00CE7498 /* DealApp.app */,
+				653317462276E84F00CE7498 /* DealAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		653317342276E84C00CE7498 /* DealApp */ = {
+			isa = PBXGroup;
+			children = (
+				653317F62279C19700CE7498 /* Utils */,
+				653317942279BCD600CE7498 /* Library */,
+				653317552276F1A000CE7498 /* Modules */,
+				6533178E2279AB9100CE7498 /* Deallist.json */,
+				653317922279ACA100CE7498 /* Citylist.json */,
+				653317352276E84C00CE7498 /* AppDelegate.swift */,
+				653317392276E84C00CE7498 /* Main.storyboard */,
+				6533173C2276E84E00CE7498 /* Assets.xcassets */,
+				6533173E2276E84E00CE7498 /* LaunchScreen.storyboard */,
+				653317412276E84E00CE7498 /* Info.plist */,
+				653317F42279BF7C00CE7498 /* GoogleService-Info.plist */,
+			);
+			path = DealApp;
+			sourceTree = "<group>";
+		};
+		653317492276E84F00CE7498 /* DealAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				65145CA0227E7AED002FA9BB /* DealPresenterTests.swift */,
+				6533174C2276E84F00CE7498 /* Info.plist */,
+			);
+			path = DealAppTests;
+			sourceTree = "<group>";
+		};
+		653317552276F1A000CE7498 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				653317592276F1FA00CE7498 /* Deals */,
+				653317582276F1EE00CE7498 /* City */,
+				653317572276F1E400CE7498 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		653317572276F1E400CE7498 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6533176B2277002000CE7498 /* Protocols */,
+				6533175A2276F2BB00CE7498 /* View */,
+				6533175D2276FF7B00CE7498 /* Interactor */,
+				6533175B2276FF4100CE7498 /* Presenter */,
+				6533175E2276FF8500CE7498 /* Entity */,
+				6533175C2276FF7400CE7498 /* Router */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		653317582276F1EE00CE7498 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				6533176A2277001800CE7498 /* Protocols */,
+				653317632276FFCE00CE7498 /* View */,
+				653317622276FFC500CE7498 /* Interactor */,
+				653317612276FFBD00CE7498 /* Presenter */,
+				653317602276FFB600CE7498 /* Entity */,
+				6533175F2276FFAF00CE7498 /* Router */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		653317592276F1FA00CE7498 /* Deals */ = {
+			isa = PBXGroup;
+			children = (
+				653317692277000C00CE7498 /* Protocols */,
+				653317682276FFFC00CE7498 /* View */,
+				653317672276FFEE00CE7498 /* Interactor */,
+				653317662276FFE700CE7498 /* Presenter */,
+				653317652276FFE000CE7498 /* Entity */,
+				653317642276FFD800CE7498 /* Router */,
+			);
+			path = Deals;
+			sourceTree = "<group>";
+		};
+		6533175A2276F2BB00CE7498 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				653317372276E84C00CE7498 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6533175B2276FF4100CE7498 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				65331780227701D900CE7498 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6533175C2276FF7400CE7498 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6533178C2277024A00CE7498 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6533175D2276FF7B00CE7498 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6533177A2277019C00CE7498 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6533175E2276FF8500CE7498 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				653317862277021400CE7498 /* LoginModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6533175F2276FFAF00CE7498 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6533178A2277023D00CE7498 /* CityRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		653317602276FFB600CE7498 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				653317842277020800CE7498 /* CityModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		653317612276FFBD00CE7498 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6533177E227701BE00CE7498 /* CityPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		653317622276FFC500CE7498 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				653317782277018C00CE7498 /* CityInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		653317632276FFCE00CE7498 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6533176E2277008B00CE7498 /* CityViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		653317642276FFD800CE7498 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				653317882277023000CE7498 /* DealRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		653317652276FFE000CE7498 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				65331782227701FE00CE7498 /* DealModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		653317662276FFE700CE7498 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6533177C227701B300CE7498 /* DealPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		653317672276FFEE00CE7498 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				653317762277017B00CE7498 /* DealInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		653317682276FFFC00CE7498 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6533176C2277007B00CE7498 /* DealsViewController.swift */,
+				65145C9D227DAED9002FA9BB /* DealTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		653317692277000C00CE7498 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				65331770227700B600CE7498 /* DealsProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6533176A2277001800CE7498 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				65331772227700D300CE7498 /* CityProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6533176B2277002000CE7498 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				65331774227700F100CE7498 /* LoginProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		653317942279BCD600CE7498 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				653317952279BD3400CE7498 /* google_signin_sdk_4_4_0 */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		653317952279BD3400CE7498 /* google_signin_sdk_4_4_0 */ = {
+			isa = PBXGroup;
+			children = (
+				653317962279BD3400CE7498 /* CHANGELOG.md */,
+				653317972279BD3400CE7498 /* GoogleSignIn.bundle */,
+				653317982279BD3400CE7498 /* README.md */,
+				653317992279BD3400CE7498 /* GoogleSignInDependencies.framework */,
+				653317D62279BD3400CE7498 /* GoogleSignIn.framework */,
+			);
+			path = google_signin_sdk_4_4_0;
+			sourceTree = "<group>";
+		};
+		653317ED2279BDDE00CE7498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				653317F02279BDE600CE7498 /* SystemConfiguration.framework */,
+				653317EE2279BDDE00CE7498 /* SafariServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		653317F62279C19700CE7498 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				653317F72279C1AA00CE7498 /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		653317312276E84C00CE7498 /* DealApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6533174F2276E84F00CE7498 /* Build configuration list for PBXNativeTarget "DealApp" */;
+			buildPhases = (
+				6533172E2276E84C00CE7498 /* Sources */,
+				6533172F2276E84C00CE7498 /* Frameworks */,
+				653317302276E84C00CE7498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DealApp;
+			productName = DealApp;
+			productReference = 653317322276E84C00CE7498 /* DealApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		653317452276E84F00CE7498 /* DealAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653317522276E84F00CE7498 /* Build configuration list for PBXNativeTarget "DealAppTests" */;
+			buildPhases = (
+				653317422276E84F00CE7498 /* Sources */,
+				653317432276E84F00CE7498 /* Frameworks */,
+				653317442276E84F00CE7498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653317482276E84F00CE7498 /* PBXTargetDependency */,
+			);
+			name = DealAppTests;
+			productName = DealAppTests;
+			productReference = 653317462276E84F00CE7498 /* DealAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6533172A2276E84C00CE7498 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Nagarro;
+				TargetAttributes = {
+					653317312276E84C00CE7498 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					653317452276E84F00CE7498 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 653317312276E84C00CE7498;
+					};
+				};
+			};
+			buildConfigurationList = 6533172D2276E84C00CE7498 /* Build configuration list for PBXProject "DealApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				he,
+				ar,
+				el,
+				ja,
+				uk,
+				es_MX,
+				zh_CN,
+				nb,
+				es,
+				pt_BR,
+				da,
+				it,
+				sk,
+				pt_PT,
+				ms,
+				sv,
+				cs,
+				ko,
+				hu,
+				tr,
+				pl,
+				zh_TW,
+				en_GB,
+				vi,
+				ru,
+				fr,
+				fi,
+				id,
+				nl,
+				th,
+				pt,
+				ro,
+				hr,
+				ca,
+			);
+			mainGroup = 653317292276E84C00CE7498;
+			productRefGroup = 653317332276E84C00CE7498 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				653317312276E84C00CE7498 /* DealApp */,
+				653317452276E84F00CE7498 /* DealAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		653317302276E84C00CE7498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653317402276E84E00CE7498 /* LaunchScreen.storyboard in Resources */,
+				653317DA2279BD3400CE7498 /* CHANGELOG.md in Resources */,
+				653317F52279BF7C00CE7498 /* GoogleService-Info.plist in Resources */,
+				6533173D2276E84E00CE7498 /* Assets.xcassets in Resources */,
+				6533173B2276E84C00CE7498 /* Main.storyboard in Resources */,
+				6533178F2279AB9100CE7498 /* Deallist.json in Resources */,
+				653317DB2279BD3400CE7498 /* GoogleSignIn.bundle in Resources */,
+				653317DC2279BD3400CE7498 /* README.md in Resources */,
+				653317932279ACA100CE7498 /* Citylist.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653317442276E84F00CE7498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6533172E2276E84C00CE7498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653317772277017B00CE7498 /* DealInteractor.swift in Sources */,
+				65331771227700B600CE7498 /* DealsProtocol.swift in Sources */,
+				653317382276E84C00CE7498 /* LoginViewController.swift in Sources */,
+				6533177F227701BE00CE7498 /* CityPresenter.swift in Sources */,
+				653317362276E84C00CE7498 /* AppDelegate.swift in Sources */,
+				653317872277021400CE7498 /* LoginModel.swift in Sources */,
+				653317852277020800CE7498 /* CityModel.swift in Sources */,
+				653317F82279C1AA00CE7498 /* Constant.swift in Sources */,
+				65331783227701FE00CE7498 /* DealModel.swift in Sources */,
+				65331775227700F100CE7498 /* LoginProtocol.swift in Sources */,
+				6533176D2277007B00CE7498 /* DealsViewController.swift in Sources */,
+				65331773227700D300CE7498 /* CityProtocols.swift in Sources */,
+				65331781227701D900CE7498 /* LoginPresenter.swift in Sources */,
+				65145C9E227DAED9002FA9BB /* DealTableViewCell.swift in Sources */,
+				653317792277018C00CE7498 /* CityInteractor.swift in Sources */,
+				6533178B2277023D00CE7498 /* CityRouter.swift in Sources */,
+				6533178D2277024A00CE7498 /* LoginRouter.swift in Sources */,
+				6533177D227701B300CE7498 /* DealPresenter.swift in Sources */,
+				6533177B2277019C00CE7498 /* LoginInteractor.swift in Sources */,
+				653317892277023000CE7498 /* DealRouter.swift in Sources */,
+				6533176F2277008B00CE7498 /* CityViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653317422276E84F00CE7498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65145CA1227E7AED002FA9BB /* DealPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		653317482276E84F00CE7498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 653317312276E84C00CE7498 /* DealApp */;
+			targetProxy = 653317472276E84F00CE7498 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		653317392276E84C00CE7498 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6533173A2276E84C00CE7498 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6533173E2276E84E00CE7498 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6533173F2276E84E00CE7498 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6533174D2276E84F00CE7498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6533174E2276E84F00CE7498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		653317502276E84F00CE7498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DealApp/Library/google_signin_sdk_4_4_0",
+				);
+				INFOPLIST_FILE = DealApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amritNew.Viper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		653317512276E84F00CE7498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DealApp/Library/google_signin_sdk_4_4_0",
+				);
+				INFOPLIST_FILE = DealApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amritNew.Viper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		653317532276E84F00CE7498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DealAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nagarro.DealAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DealApp.app/DealApp";
+			};
+			name = Debug;
+		};
+		653317542276E84F00CE7498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DealAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nagarro.DealAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DealApp.app/DealApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6533172D2276E84C00CE7498 /* Build configuration list for PBXProject "DealApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6533174D2276E84F00CE7498 /* Debug */,
+				6533174E2276E84F00CE7498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6533174F2276E84F00CE7498 /* Build configuration list for PBXNativeTarget "DealApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653317502276E84F00CE7498 /* Debug */,
+				653317512276E84F00CE7498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653317522276E84F00CE7498 /* Build configuration list for PBXNativeTarget "DealAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653317532276E84F00CE7498 /* Debug */,
+				653317542276E84F00CE7498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6533172A2276E84C00CE7498 /* Project object */;
+}
